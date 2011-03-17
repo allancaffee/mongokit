@@ -324,7 +324,7 @@ class Document(SchemaDocument):
 
     def fetch(self, spec=None, *args, **kwargs):
         """
-        return all document wich match the structure of the object
+        return all document which match the structure of the object
         `fetch()` takes the same arguments than the the pymongo.collection.find method.
 
         The query is launch against the db and collection of the object.
