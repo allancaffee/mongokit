@@ -38,7 +38,10 @@ class SchemaOperator(object):
     def __iter__(self):
         for operand in self._operands:
             yield operand 
-    
+
+    def __eq__(self, other):
+        return type(self) == type(other) and self._operands == other._operands
+
     def validate(self, value):
         raise NotImplementedError
 
